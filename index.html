@@ -4,7 +4,17 @@
     <link rel="stylesheet" href="./stylesheets/style.css"></head>
   
   <body>
-
+    <div class="navbar">
+        <span class="trigger_nav">Menu</span>
+        <div class="navbar_wrapper">
+            <section>
+                <ul>
+                    <li><a href="./subpages/formation.html">A propos de ma formation OpenClassrooms</a></li>
+                    <li><a href="./subpages/mes_projets.html">Mes projets en cours</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>    
   <div class="slideruno">
     <div class="profil img">
   <img src="./assets/avatar.jpg" draggable="false">
@@ -27,30 +37,17 @@
     <a href="https://codepen.io/kyomeikylas/full/poQZQVr" target="_blank">Voir le codepen</a></section>
   </div>
   <div class="sliderduo last"><h1>Qui suis-je ?</h1>
-Figma <strong>3/5</strong><br>
-HTML <strong>4/5</strong><br>
-CSS <strong>4/5</strong><br>
-JS <strong>2/5</strong><br>
-Python <strong>2/5</strong><br><br>
+Figma <br>
+HTML <br><strong>flex, grid</strong>
+CSS <strong>bootstrap, tailwind (en cours d'apprentissage)</strong><br>
+JS <strong>niveau débutant</strong><br>
+Python <strong>niveau débutant</strong><br><br>
 C'est peut-être dans le mauvais ordre que j'ai établi ce portfolio, je m'appelle Camille, j'ai 26 ans et je suis une ancienne étudiante de droit, puis en langue chinoise qui a été longtemps <und>passionnée par les jeux vidéos et le web</und>. J'ai cru à tord que ce n'était pas un milieu d'avenir et aujourd'hui j'ai décidé de prendre mon courage à deux mains et de m'y lancer la tête la première. J'ai bien conscience de n'avoir aucune expérience professionnelle ni de background d'études dans le domaine; c'est pour cela que je cherche une <i>entreprise en alternance</i> afin de pouvoir avoir ma première attache dans le <und>monde professionnel</und> du développement web.
 Vous pouvez retrouver mon codepen où vous pourrez voir des codes honteux et mals écrits <a href="https://codepen.io/kyomeikylas/pens/showcase" target="_blank">ici</a>
   </div>
 
 </body>
   <footer><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-    $(window).on('scroll', function() {
-        var windowHeight = $(window).height();
-        var scrollTop = $(window).scrollTop();
-        var threshold = 0.7;
-        $('.slideruno, .sliderduo, .slidertrio, .sliderduo.last').each(function() {
-            var elementOffset = $(this).offset().top;
-            if (elementOffset < (scrollTop + windowHeight * threshold)) {
-                $(this).css('transform', 'scale(1)');
-            }
-        });
-    });
-});
-</script></footer>
+    <script src="./scripts/scripts.js"></script>
+</footer>
 </html>
