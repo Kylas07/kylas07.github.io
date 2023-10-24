@@ -19,3 +19,23 @@ $(document).ready(function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll(".navbar_wrapper li a");
+
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener("mouseover", function() {
+            for (var j = 0; j < links.length; j++) {
+                if (links[j] !== this) {
+                    links[j].style.filter = "blur(5px)";
+                }
+            }
+        });
+
+        links[i].addEventListener("mouseout", function() {
+            for (var j = 0; j < links.length; j++) {
+                links[j].style.filter = "none";
+            }
+        });
+    }
+});

@@ -269,7 +269,7 @@ a:hover{
     transition: ease 1s;
 }
 .navbar.open {
-    height: 70%;
+    height: 100%;
     background-color: rgb(51 51 51 / 71%);
     color:white;
     transition: ease 1s;
