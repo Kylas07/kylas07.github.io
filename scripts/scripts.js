@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var navbar = $('.navbar');
+    const navbar = $('.navbar');
 
     $('.trigger_nav').click(function() {
         navbar.toggleClass('open'); 
@@ -21,7 +21,7 @@ $(document).ready(function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    var links = document.querySelectorAll(".navbar_wrapper li a");
+    const links = document.querySelectorAll(".navbar_wrapper li a");
 
     for (var i = 0; i < links.length; i++) {
         links[i].addEventListener("mouseover", function() {
@@ -38,4 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+    const slideruno = document.querySelector(".slideruno");
+    slideruno.style.opacity = 1;
 });

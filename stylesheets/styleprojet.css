@@ -1,0 +1,107 @@
+body  {
+    background: #1E1E1E;
+    margin: auto;
+}
+.navbar {
+    background: #d9ff00!important;
+    color:#1E1E1E;
+}
+.navbar.open {
+    background:rgb(52 58 0 / 71%)!important;
+}
+#background-video {
+    height: 100vh;
+    width:100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(.5);
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, transparent 100%);    
+    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, transparent 100%);    
+}
+
+
+#background-video.scroll {
+    filter: blur(10px);
+}
+#pause-button {
+    position: absolute;
+    left: 2vw;
+    bottom: 2vh;
+    height: 50px;
+    width: 50px;
+    appearance: none;
+    background: none;
+    border: none;
+}
+#pause-button img {
+    width: 100%;
+    height: 100%;
+    outline: 1px solid #d9ff00;
+    outline-offset: 13px;
+}
+.content {
+    display: grid;
+    grid-template-rows: 10fr 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #d9ff00;
+    justify-items: center;
+}
+.content h1  {
+    font-size: 2em;
+    text-align-last: center;
+    font-family: fangsong;
+    font-weight: 100;
+    padding: 1em;
+}
+.content h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: Arial;
+    border: 1px solid;
+    padding: 1em
+}
+
+.content h2:hover {
+    background: #d9ff00;
+    color:#1E1E1E;
+    transition:ease 1s;
+}
+
+a,a:visited{
+    text-decoration:none;
+    font-weight:800;
+    color:#1E1E1E;
+    background: #d9ff00;
+    padding:2px 10px;
+    text-transform:uppercase;
+    -webkit-transition:ease 1s;
+    -o-transition:ease 1s;
+    transition:ease 1s
+}
+a:hover{
+    color:#d9ff00;
+    background:#1E1E1E;
+    -webkit-transition:ease 1s;
+    -o-transition:ease 1s;
+    transition:ease 1s;
+}
+
+.sliderduo {
+    height: 1000px;
+    display: flex;
+    color: #d9ff00;
+    background:#1E1E1E;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 8em;
+
+}
