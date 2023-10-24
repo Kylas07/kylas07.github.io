@@ -40,4 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     const slideruno = document.querySelector(".slideruno");
     slideruno.style.opacity = 1;
+    const navbarop = document.querySelector(".navbar");
+    navbarop.style.opacity = 1;
 });

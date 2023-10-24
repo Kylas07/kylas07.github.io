@@ -123,15 +123,30 @@ body{
     font-weight:600;
     color:transparent;
     -webkit-text-stroke-width:1px;
-    -webkit-text-stroke-color:#fff
+    -webkit-text-stroke-color:#fff;
+    transition:ease 1s;
+}
+
+.profil.img>span:hover name {
+    -webkit-text-stroke-width:0px;
+    color:#1E1E1E; 
+    transition:ease 1s;
+}
+.profil.img>span:hover name:before {
+    color:transparent;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color:#1E1E1E;
+    transition:ease 1s;
 }
 .profil.img>span name:before{
     content:"Reverdy Camille";
     position:absolute;
     margin-top:10px;
     color:#fff;
-    -webkit-text-stroke-width:0
+    -webkit-text-stroke-width:1px;
+    transition:ease 1s;
 }
+
 .profil.img img{
     margin:0;
     width:200px;
@@ -140,7 +155,8 @@ body{
 }
 .slideruno{
     opacity: 0;
-    transition: opacity ease 1s;
+    transition-delay: 1s;
+    transition: opacity ease 1.5s;
     -ms-flex-item-align:center;
     -ms-grid-row-align:center;
     align-self:center;
@@ -164,11 +180,16 @@ body{
     padding:5em;
     text-align:justify
 }
+
 llb{
     font-family:arial;
     text-transform:uppercase;
-    color:var(--700)
+    color:var(--700);
+    transition:ease 1s;
 }
+.profil.img>span:hover llb{background: var(--700);
+    color: #1E1E1E;
+transition:ease 1s;}
 strong{
     color:var(--700)
 }
