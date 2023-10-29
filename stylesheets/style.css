@@ -180,6 +180,10 @@ body{
     padding:5em;
     text-align:justify
 }
+.sliderduo.even {
+    color: #1E1E1E;
+    background: white;
+}
 
 llb{
     font-family:arial;
